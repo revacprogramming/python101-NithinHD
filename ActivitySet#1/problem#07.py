@@ -1,2 +1,3 @@
 text = "X-DSPAM-Confidence:    0.8475"
-print(float(text[-6:]))
+n=text.find(':')
+print(float(text[n+1:]))
