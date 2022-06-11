@@ -1,8 +1,8 @@
-fh=open(input('Enter the file name:'))
+f=open(input('Enter the file name:'))
 count=0
 total=0
 a=[]
-for line in fh:
+for line in f:
     if line.startswith("X-DSPAM-Confidence:"):
         n=line.find(':')
         b=float(line[n+1:])
